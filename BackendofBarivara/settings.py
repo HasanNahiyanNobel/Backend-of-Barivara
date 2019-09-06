@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['192.168.0.106']
 
 INSTALLED_APPS = [
 	'music.apps.MusicConfig',
+	'houses.apps.HousesConfig',
 	'django.contrib.admin',
 	'django.contrib.auth',
 	'django.contrib.contenttypes',
