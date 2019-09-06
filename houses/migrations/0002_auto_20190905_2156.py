@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='house',
-            name='vara',
+            name='barivara',
             field=models.IntegerField(default=0),
         ),
     ]
