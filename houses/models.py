@@ -15,3 +15,9 @@ class House(models.Model):
 	khabar_ghor = models.BooleanField(null=True)
 	rannaghor = models.BooleanField(null=True)
 	barivara = models.IntegerField(null=True)
+
+	# class Meta:
+	# 	db_table = 'House'
+
+	def __str__(self):
+		return str(self.zilla)
