@@ -15,7 +15,7 @@ def index(request):
 
 class HousesList(APIView):
 
-	def get(self):
+	def get(self, request):
 		houses = House.objects.all()
 		serializer = HouseSerializer(houses, many=True)
 		return Response(serializer.data)

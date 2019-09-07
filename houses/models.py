@@ -9,7 +9,7 @@ class House(models.Model):
 	zilla = models.CharField(max_length=25)
 	upazilla = models.CharField(max_length=25)
 	elaka = models.CharField(max_length=25)
-	family_basha = models.BooleanField(null=True) # True means family basha, False means mess.
+	family_basha = models.BooleanField(null=True)  # True means family basha, False means mess.
 	shobar_ghorer_shongkhya = models.IntegerField(null=True)
 	bathroomer_shongkhya = models.IntegerField(null=True)
 	khabar_ghor = models.BooleanField(null=True)
@@ -19,5 +19,5 @@ class House(models.Model):
 	# class Meta:
 	# 	db_table = 'House'
 
-	def __str__(self):
+	def __str__(self):  # Should it be __unicode__(self)?
 		return str(self.zilla)
