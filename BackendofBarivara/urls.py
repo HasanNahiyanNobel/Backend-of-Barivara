@@ -8,4 +8,5 @@ urlpatterns = [
 	path('music/', include('music.urls')),
 	path('houses/', include('houses.urls')),
 	path('houses-list/', views.HousesList.as_view()),
+	path('users-list/', views.UsersList.as_view()),
 ]
